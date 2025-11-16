@@ -45,7 +45,7 @@ All BrowserStack configuration files (`browserstack.yml`, `BrowserStackDriverMan
 
 The core Selenium automation is fully functional and tested locally using Edge browser.
 
-The working Screenshots are captured with Successful console output and Maven Build success for pom.xml
+**The working Screenshots are captured with Successful console output and Maven Build success for pom.xml and uploaded in the Screenshots folder created along with Main Project folder**
 
 --- AUTHOR ---
 Aniruddh A Hanumasagar.
