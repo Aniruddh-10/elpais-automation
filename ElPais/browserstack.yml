@@ -1,0 +1,41 @@
+version: 2
+
+auth:
+  username: aniruddhahanumas_wHf6pW
+  access_key: cpBcTziCQ6q22yMsFrpw
+
+run_settings:
+  project_name: ElPaisOpinionScraper
+  build_name: browserstack-build-1
+  test_framework: custom
+  test_observability: false
+  timeout: 900
+  command: mvn exec:java -Dexec.mainClass="com.elpais.Main"
+  upload_logs: true
+  parallels: 5
+
+environments:
+  - os: Windows
+    osVersion: 10
+    browser: Chrome
+    browserVersion: 120.0
+  - os: OS X
+    osVersion: Monterey
+    browser: Safari
+    browserVersion: 15.6
+  - device: iPhone 13
+    osVersion: 15
+    browser: Chromium
+    realMobile: true
+    deviceOrientation: portrait
+  - os: Windows
+    osVersion: 11
+    browser: Firefox
+    browserVersion: latest
+  - device: Samsung Galaxy S22
+    osVersion: 12.0
+    browser: Chrome
+    realMobile: true
+
+connection_settings:
+  local: false
